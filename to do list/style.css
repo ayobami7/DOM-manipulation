@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0; 
+    background-color: grey;
+}
+
+.add-task-container {
+    background-color: azure;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    /* width: 500px; */
+}
+
+input{
+    padding: 10px;
+    border: none;
+    background: transparent;
+    /* margin-right: 10px; */
+    font-size: 1.2rem;
+    outline: none;
+    flex: 4;
+}
+
+#addTask{
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 1.2rem;
+    outline: none;
+    flex: 1;
+}
+
+#addTask :hover{
+    cursor: pointer;
+    color: green;
+}
+
+
+/* #task-container{
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px; 
+} */
+
+.task{
+    background-color: azure;
+    border-radius: 10px;
+    padding: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+
+}
+
+.task li{
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    flex: 4;
+}
+
+
+.task button{
+    flex: ;
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 1.2rem;
+    outline: none;
+    
+}
+
+.task .checkBtn{
+    color: black;
+}
+
+.task .checkBtn:hover{
+    color: orange;
+}
+
+.task .delBtn{
+    color: black;
+}
+.task .delBtn:hover{
+    color: red;
+}

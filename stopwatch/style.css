@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0; 
+    background-color: grey;
+}
+
+.container {
+    background-color: azure;
+    height: 250px;
+    width: 60%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
+}
+
+
+#timer{
+    font-size: 5rem;
+    margin: 50px 0;
+}
+
+.buttons{
+    text-align: center;
+    margin: 50px;
+    justify-content: space-between;
+}
+
+button{
+    margin: 0 10px;
+    border: none;
+    background-color: transparent;
+}
+
+button i{
+    font-size: 2rem;
+}
+
+#play{
+    color: green;
+} 
+#pause{
+    color: orange;
+}
+#reset{
+    color: red;
+}   
