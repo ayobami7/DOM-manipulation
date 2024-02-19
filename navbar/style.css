@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:lightgray ;
+    align-items: center;
+}
+
+nav{
+    background-color: white;
+    padding: 0 10px;
+    justify-items: center;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-header img{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.nav-header .nav-toggle{
+    display: none;
+    transform: rotate(0);
+}
+
+.nav-header .nav-toggle.show-links{
+    transform: rotate(-90deg);
+}
+
+.nav-center{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    margin: 5px;
+    text-decoration: none;
+    color: #063970;
+    text-transform:capitalize;
+    font: 1rem sans-serif;
+}
+
+.nav-center .links{
+    display: flex;
+}
+
+.nav-center .social-icons{
+    display: flex;
+}
+
+.nav-toggle{
+    border: none;
+    background:transparent ;
+    font-size: 1.5rem ;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .nav-header .nav-toggle{
+        display: flex;
+    }
+    .nav-center{
+        display: block;
+        /* justify-content: space-between; */
+    }
+    .links .social-icons{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    .nav-header .nav-toggle{
+        display: flex;
+    }
+    .nav-center{
+        display: block;
+        /* justify-content: space-between; */
+    }
+    .nav-center .links{
+        display: none;
+        line-height: 2rem;
+        transition:0.5s ease-in-out;
+    } 
+    .nav-center .show-links{
+        display: block;
+        line-height: 2rem;
+        transition:0.5s ease-in-out;
+    }
+    
+    .nav-center .social-icons{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .nav-header .nav-toggle{
+        display: flex;
+    }
+    .nav-center{
+        display: block;
+        justify-content: space-between;
+    }
+    .nav-center .links{
+        display: none;
+        line-height: 2rem;
+        transition:0.5s ease-in-out;
+    } 
+    .nav-center .show-links{
+        display: block;
+        line-height: 2rem;
+        transition:0.5s ease-in-out;
+    }
+    .nav-center .social-icons{
+        display: none;
+    }
+    
+}
